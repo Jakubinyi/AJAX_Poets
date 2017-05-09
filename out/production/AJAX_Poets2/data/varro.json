@@ -1,0 +1,8 @@
+{
+  "name": "Varro",
+  "poems":
+  [
+    {"title": "Január","publication": 2016,"filePath": "januar.txt"},
+    {"title": "Kíváncsiskodó","publication": 2013,"filePath": "kivancsiskodo.txt"}
+  ]
+}

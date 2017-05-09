@@ -1,0 +1,9 @@
+{
+  "name": "Petofi",
+  "poems":
+  [
+    {"title": "A borozó","publication": 1842,"filePath": "borozo.txt"},
+    {"title": "A nemes","publication": 1844,"filePath": "nemes.txt"},
+    {"title": "A huszár","publication": 1849,"filePath": "huszar.txt"}
+  ]
+}
