@@ -50,4 +50,13 @@
     <listener>
         <listener-class>servlet.Initializer</listener-class>
     </listener>
+    <filter>
+        <filter-name>LoginFilter</filter-name>
+        <filter-class>servlet.LoginFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>LoginFilter</filter-name>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-name>ProfileServlet</servlet-name>
+    </filter-mapping>
 </web-app>

@@ -29,7 +29,8 @@ public class LoginServlet extends HttpServlet {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
 
-        HttpSession session = request.getSession();
+        //ha true, akkor új sessiont generál, ha false akkor lehet null
+        HttpSession session = request.getSession(true);
         Object usernameInSession = session.getAttribute("username");
 
         if(poets.containsKey(username) && poets.get(username).equals(password)){

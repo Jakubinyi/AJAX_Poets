@@ -23,14 +23,10 @@ public class ProfileServlet extends HttpServlet {
         request.getRequestDispatcher("profile.html").include(request, response);
 
         HttpSession session=request.getSession(false);
-        if(session!=null){
-            String username=(String)session.getAttribute("username");
+        String username=(String)session.getAttribute("username");
 
-            out.print("Hello "+username+", welcome to profile!");
-        }
-        else{
-            response.sendRedirect("login.html");
-        }
+        out.print("Hello "+username+", welcome to profile!");
+
         out.close();
     }
 }
